@@ -1,0 +1,348 @@
+/* Content Frame */
+.content-frame {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #f4f7fc;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* NGO Profile Section */
+.profile-header {
+    font-family: "Arial", sans-serif; /* Adjusted to a standard font */
+    flex: 1; /* Takes 1/3rd of the space */
+    padding: 20px;
+    background: linear-gradient(135deg, #51aacd, #51aacd);
+    color: #ffffff; /* White text for profile */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: 90vh; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+.name{
+    margin-top: 10px;
+
+}
+/* Add Event Section */
+.add-event-section {
+    flex: 2; /* Takes 2/3rd of the space */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 90vh; /* Adjusted height to match profile section */
+    margin-top: 20px;
+}
+
+.add-event-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.add-event-form input,
+.add-event-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.add-event-button {
+    padding: 10px 20px;
+    background-color: #51aacd;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-event-button:hover {
+    background-color: #308d19;
+    transform: scale(1.05);
+}
+
+/* Event List Section */
+.event-list-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px; /* Adds space between form and event list */
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Hover effect to lift the card */
+}
+
+.event-card-left {
+    flex: 1; /* Data section occupies most of the card */
+}
+
+.event-card-left h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-card-left p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.event-card-left p strong {
+    color: #333;
+}
+
+.event-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 20px;
+}
+
+.view-event-button {
+    padding: 8px 16px;
+    background-color: #51aacd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-event-button:hover {
+    background-color: #308d19;
+}
+
+/* Responsive Design for Event Cards */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+    }
+
+    .event-card-left {
+        margin-bottom: 15px;
+    }
+
+    .event-card-right {
+        align-items: center;
+    }
+}
+.volunteer-profile-container {
+    padding: 20px;
+  }
+  
+  .menu-bar {
+    margin-bottom: 20px;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  
+  .add-event-section {
+    margin-top: 30px;
+  }
+  
+  .event-list-section {
+    margin-top: 30px;
+  }
+  
+  .event-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  
+  .volunteer-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .volunteer-list-container h1 {
+    font-size: 2rem;
+  }
+  
+  .volunteer-list-container p {
+    font-size: 1rem;
+  }
+  /* Flex container for profile and event form */
+.profile-and-form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Styling for the volunteers section */
+.volunteers-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .volunteers-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .volunteer-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+  }
+  
+  .volunteer-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .volunteer-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .volunteer-card p strong {
+    font-weight: bold;
+  }
+  
+  .volunteer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .volunteer-card p {
+    margin: 10px 0;
+  }
+  .volunteer-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the cards to wrap onto new lines */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the left */
+    margin-top: 20px;
+  }
+  
+  .volunteer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(25% - 20px); /* 4 cards per row with space between them */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box; /* Ensure padding does not affect card width */
+  }
+  
+  .volunteer-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .volunteer-card-header h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .volunteer-card-body {
+    font-size: 14px;
+  }
+  
+  .volunteer-card-body p {
+    margin: 5px 0;
+  }
+  
+  .volunteer-list-section {
+    margin-top: 40px;
+  }
+  
+  .volunteer-list-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure cards stack vertically on medium-sized screens */
+  @media (max-width: 1024px) {
+    .volunteer-card {
+      width: calc(33.33% - 20px); /* 3 cards per row on medium screens */
+    }
+  }
+  
+  /* Ensure cards stack vertically on smaller screens */
+  @media (max-width: 768px) {
+    .volunteer-card {
+      width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .volunteer-card {
+      width: 100%; /* 1 card per row on very small screens */
+    }
+  }
+  

@@ -1,0 +1,23 @@
+.contact-list-container {
+    padding: 20px;
+  }
+  
+  .contact-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .contact-table th, .contact-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .contact-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
