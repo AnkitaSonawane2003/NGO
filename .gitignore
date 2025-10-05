@@ -13,6 +13,10 @@ node_modules/
 # Ignore any .env files anywhere
 **/.env
 
+
+Backend/config/db.config.js
+
+
 # dependencies
 /node_modules
 /.pnp

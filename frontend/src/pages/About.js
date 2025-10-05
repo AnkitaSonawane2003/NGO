@@ -50,4 +50,4 @@ function About() {
   );
 }
 
-export default About; // Make sure to export About
+export default About; 
