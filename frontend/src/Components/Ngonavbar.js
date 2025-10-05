@@ -5,14 +5,6 @@ import '../styles/ngo.css';
 
 
 
-// import sun from "../assets/sun.jpg";
-
-//import moon from "../assets/moon.png";
-
-  // const Navbar=({theme,setTheme})=>{
-  //   // const toggle_mode=()=>{
-  //   //   theme ==='light'? setTheme('dark') :setTheme('light');
-  //   // }
   const Navbar = () => {
   
   return (

@@ -1,8 +1,6 @@
 import React from 'react'
  import third from "../assets/third.jpg";
 import '../styles/card3.css';
-//  import "../node_modules/bootstarp/dist/css/bootstrap.min.css";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function card1() {
   return (

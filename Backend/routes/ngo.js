@@ -40,32 +40,7 @@ router.get('/ngos/:email', authMiddleware, async (req, res) => {
   }
 });
 
-// Example route for adding an NGO (use `verifyToken` middleware)
-// Route to add an NGO
-// Example route for adding an NGO with authentication
-// router.post('/addNgo', authMiddleware, async (req, res) => {
-//   const { ngoname, location, selectedNgoType, pin, email } = req.body;
 
-//   // You can add additional checks here (e.g., validate input, check for required fields)
-//   if (!ngoname || !location || !selectedNgoType || !pin || !email) {
-//     return res.status(400).json({ message: 'All fields are required' });
-//   }
-
-//   try {
-//     // Check if an NGO with the same email already exists
-//     const existingNgo = await Ngo.findOne({ email }).exec();
-//     if (existingNgo) {
-//       return res.status(400).json({ message: 'NGO with this email already exists' });
-//     }
-
-//     const newNgo = new Ngo({ ngoname, location, selectedNgoType, pin, email });
-//     await newNgo.save();
-//     res.status(201).json({ message: 'NGO added successfully' });
-//   } catch (err) {
-//     console.error('Error adding NGO:', err);
-//     res.status(500).json({ message: 'Failed to add NGO' });
-//   }
-// });
 
 
 
